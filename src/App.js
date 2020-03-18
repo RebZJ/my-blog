@@ -23,9 +23,9 @@ class MyProvider extends React.Component {
       try {
         var arrayposts = [];
 
-        for(var i=0;i<postslocal[0].length;i++){
-          if(postslocal[0][i].published === "true"){
-            arrayposts.push(postslocal[0][i]);
+        for(var i=0;i<postslocal.length;i++){
+          if(postslocal[i].published === true){
+            arrayposts.push(postslocal[i]);
           }
         }
         const posts =  arrayposts.reverse();

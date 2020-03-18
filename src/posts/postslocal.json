@@ -1,18 +1,18 @@
 [
-  [
+
     {
-      "published": "true",
+      "published": true,
       "title": "First post",
       "content": "# Goddamit I hope this works\n\nI hope this works!  I hope this works too man!\n\n![text](https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone11-red-select-2019?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1566956144763)\n\nThis really better work",
       "date_published": "2020-03-11",
       "slug": "first-post"
     },
     {
-      "published": "true",
+      "published": true,
       "title": "Second post",
       "content": "Maybe this will work better? I doubt it tho :(\n\n### Yeet",
       "date_published": "2020-03-10",
       "slug": "second-post"
     }
-  ]
+
 ]
