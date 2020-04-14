@@ -10,10 +10,45 @@
   opacity: 1;
 }
 .transitionIn-exit-active {
+
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 1300ms, transform 300ms;
 }
+/* Hidden until hover */
+.hidden {
+
+  color:black;
+  background-color: black;
+  transition: content 1000ms;
+
+}
+.hidden:before {
+  color:white;
+  content:" If you would like to impart some wisdom....";
+  transition: content 1000ms;
+}
+
+.hidden:hover:after {
+  background-color: white;
+ 
+  content:" Please email me here! >>> rebmakesmusic@gmail.com";
+}
+
+/*react modal transitions*/
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
 .rollIn {
   -webkit-animation: bounce-in-left 1.5s both;
   animation: bounce-in-left 1.5s both;
