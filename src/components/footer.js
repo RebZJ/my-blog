@@ -184,28 +184,7 @@ export default function Footer(props) {
         }}
       >
         <SignUpModal></SignUpModal>
-      <div style={{border:"5px dashed white", padding:"2px 10px 2px 10px"}}>
-          <p
-            style={{
-              textAlign: "center",
-              color: "white",
-              padding: "20px 0  0 0",
-            }}
-          >
-            {"Want to know the next time I find (or make) something kinda cool?"}
-          </p>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-         
-              color: "white",
-            }}
-            dangerouslySetInnerHTML={{ __html: formembed }}
-          />
-      </div>
+      {/* <div style={{border:"5px dashed white", padding:"2px 10px 2px 10px"}}></div> */}
         <div
           style={{
             textAlign: "center",

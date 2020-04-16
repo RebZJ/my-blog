@@ -6,8 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import WebFont from 'webfontloader';
 import React, { useEffect } from "react";
 import { useLocation, } from "react-router-dom";
-import PerfectScrollbar from 'react-perfect-scrollbar';
-import 'react-perfect-scrollbar/dist/css/styles.css';
+
 
 WebFont.load({
   google: {
@@ -31,12 +30,12 @@ function ScrollToTop() {
 }
 
 ReactDOM.render(
-  <PerfectScrollbar>
+
     <BrowserRouter>
       <ScrollToTop />
       <App />
     </BrowserRouter>
-  </PerfectScrollbar>
+
   , document.getElementById('root'));
 
 

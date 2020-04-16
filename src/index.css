@@ -17,7 +17,6 @@ code {
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,13 +26,13 @@ code {
 .subheading {
   font-weight: 300;
 } */
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 
 
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: auto;
 }
 
@@ -63,18 +62,5 @@ body::-webkit-scrollbar-thumb {
 									   color-stop(0.72, rgb(73,125,189)),
 									   color-stop(0.86, rgb(28,58,148)));
 }
+ */
 
-
-
-.scroller::-webkit-scrollbar {
-  width: 7.5px;
-}
-
-.scroller::-webkit-scrollbar-track {
-  background: white;
-}
-
-.scroller::-webkit-scrollbar-thumb {
-  background: #7f7f7f;
-  border-right: 1px solid white;
-}

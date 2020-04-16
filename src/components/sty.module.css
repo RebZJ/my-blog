@@ -15,6 +15,15 @@
   transform: scale(0.9);
   transition: opacity 1300ms, transform 300ms;
 }
+
+.simplefadein:before{
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.simplefadein:after{
+  opacity: 1;
+}
 /* Hidden until hover */
 .hidden {
 
