@@ -34,7 +34,7 @@ class AboutPage extends Component {
        <br></br>
             <h3 style={{ textAlign: "center" }} >Contact?</h3>
             <hr></hr>
-            <p> In the event you might want to contact me. My email is as follows: rebmakesmusic@gmail.com. Feel free to ask me about anything!
+            <p> In the event you might want to contact me, my email is: rebmakesmusic@gmail.com. Feel free to ask me about anything or just....holla..ya know? 
        </p>
         </div>
             ;

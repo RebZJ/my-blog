@@ -18,7 +18,7 @@ function message() {
 }
 
 var url_request =
-  "https://public-api.wordpress.com/rest/v1.1/sites/rebdoesathink.art.blog/posts/";
+  "https://public-api.wordpress.com/rest/v1.1/sites/rebdoesathink.art.blog/posts/?context='display'";
 
 // Then create a provider Component
 export class MyProvider extends React.Component {

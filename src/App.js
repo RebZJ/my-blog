@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Layout from "./components/layout";
-import { Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import PostPage from "./components/PostPage";
 import BlogEditor from "./components/BlogEditor";
@@ -13,7 +13,8 @@ import AboutPage from "./components/AboutPage";
 import { useLocation } from "react-router-dom";
 import mainbg from "./assets/mainbg.gif";
 import styles from "./App.module.css";
-import {MyContext, MyProvider} from './myContext';
+import { MyContext, MyProvider } from "./myContext";
+import NotFoundPage from './components/NotFoundPage';
 //state management thingo
 
 class StyledDiv extends React.Component {
@@ -41,44 +42,47 @@ class App extends React.Component {
                   <NavBar greeting={context.state.greeting}></NavBar>
 
                   <StyledDiv>
-                    <Route
-                      exact
-                      path="/"
-                      render={(props) => (
-                        <Layout posts={context.state.posts}></Layout>
-                      )}
-                    />
-
-                    {/*This creates all the routes for all of the pages that I have*/}
-                    {context.state.posts.map((post) => (
+                    <Switch>
                       <Route
-                        key={post.date}
                         exact
-                        path={
-                          "/posts/" +
-                          moment(post.date).format("YYYY-MM-DD") +
-                          "/" +
-                          post.slug
-                        }
-                        render={(props) => <PostPage post={post}></PostPage>}
+                        path="/"
+                        render={(props) => (
+                          <Layout posts={context.state.posts}></Layout>
+                        )}
                       />
-                    ))}
-                    <Route
-                      exact
-                      path={"/posts"}
-                      render={(props) => (
-                        <AllBlogPostsPage
-                          posts={context.state.posts}
-                        ></AllBlogPostsPage>
-                      )}
-                    />
-                    <Route
-                      exact
-                      path={"/about"}
-                      render={(props) => (
-                        <AboutPage posts={context.state.posts} />
-                      )}
-                    />
+
+                      {/*This creates all the routes for all of the pages that I have*/}
+                      {context.state.posts.map((post) => (
+                        <Route
+                          key={post.date}
+                          exact
+                          path={
+                            "/posts/" +
+                            moment(post.date).format("YYYY-MM-DD") +
+                            "/" +
+                            post.slug
+                          }
+                          render={(props) => <PostPage post={post}></PostPage>}
+                        />
+                      ))}
+                      <Route
+                        exact
+                        path={"/posts"}
+                        render={(props) => (
+                          <AllBlogPostsPage
+                            posts={context.state.posts}
+                          ></AllBlogPostsPage>
+                        )}
+                      />
+                      <Route
+                        exact
+                        path={"/about"}
+                        render={(props) => (
+                          <AboutPage posts={context.state.posts} />
+                        )}
+                      />
+                   <Route path="*" component={NotFoundPage} />
+                    </Switch>
                   </StyledDiv>
                   <Footer />
                 </React.Fragment>
