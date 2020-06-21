@@ -4,7 +4,7 @@ import ReactHtmlParser from "react-html-parser";
 import Modal from "react-responsive-modal";
 import { MyContext, MyProvider } from "../myContext";
 import sty from "./sty.module.css";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const styles = {
   root: {
@@ -76,8 +76,6 @@ function message() {
   };
 }
 
-
-
 function SignUpModal(props) {
   var formembed = `<!-- Begin Mailchimp Signup Form -->
   <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -89,7 +87,7 @@ function SignUpModal(props) {
   <div id="mc_embed_signup">
   <form action="https://gmail.us19.list-manage.com/subscribe/post?u=b1c51f46229c1e2997b9ae1a7&amp;id=39f2b147fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
-    <h2>Subscribe</h2>
+    
   <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
   <div class="mc-field-group">
     <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
@@ -114,15 +112,17 @@ function SignUpModal(props) {
   </div>
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   <!--End mc_embed_signup-->`;
+
   var randomMessage = message();
   // const [modalIsOpen, setIsOpen] = React.useState(false);
   const [baitmessage, setbaitmessage] = React.useState(message());
-  useEffect(()=>{
+  useEffect(() => {
     const script1 = document.createElement("script");
-    script1.src = "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
+    script1.src =
+      "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
     script1.async = true;
     document.body.appendChild(script1);
-  })
+  });
 
   // function openModal() {
   //   setIsOpen(true);
@@ -163,7 +163,7 @@ function SignUpModal(props) {
               />
               <div style={{ maxWidth: "400px", textAlign: "center" }}>
                 <p style={{ fontSize: "70%" }}>
-                  {"(This isn't really a mailing list, I just share thoughts or cool stuff I find. " +
+                  {"(This isn't really a mailing list, I just share thoughts or cool stuff I find or stuff I make. " +
                     "Just something both of us can learn from. I always appreciate conversation so feel free to reply to anything I find or make)"}
                 </p>
               </div>

@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import ReactDOM, { render, hydrate } from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -20,23 +20,31 @@ function ScrollToTop() {
   useEffect(() => {
     window.scrollTo({
       top: 0,
-     
+
       behavior: 'smooth'
     });
-    
+
   }, [pathname]);
 
   return null;
 }
 
-ReactDOM.render(
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<BrowserRouter><ScrollToTop /><App /></BrowserRouter>, rootElement);
+} else {
+  render(<BrowserRouter><ScrollToTop /><App /></BrowserRouter>, rootElement);
+}
 
-    <BrowserRouter>
-      <ScrollToTop />
-      <App />
-    </BrowserRouter>
+// ReactDOM.render(
 
-  , document.getElementById('root'));
+//     <BrowserRouter>
+//       <ScrollToTop />
+//       {
+//       hydrate(<App />, rootElement)}
+//     </BrowserRouter>
+
+//   , document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change

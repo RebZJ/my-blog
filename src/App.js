@@ -3,7 +3,7 @@ import Layout from "./components/layout";
 import { Route, Switch, Redirect } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import PostPage from "./components/PostPage";
-import BlogEditor from "./components/BlogEditor";
+
 import SliderImage from "./components/SliderImage";
 import postslocal from "./posts/postslocal.json";
 import moment from "moment";
