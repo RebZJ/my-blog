@@ -4,7 +4,7 @@ import ReactHtmlParser from "react-html-parser";
 import { datemod } from "./datemod";
 import { getcate } from "./getcate";
 import sty from "./sty.module.css";
-import { MyContext, MyProvider } from "../myContext";
+import { MyContext} from "../myContext";
 import TouchAppIcon from '@material-ui/icons/TouchApp';
 import {
   EmailShareButton,

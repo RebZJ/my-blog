@@ -4,18 +4,18 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import PostPage from "./components/PostPage";
 
-import SliderImage from "./components/SliderImage";
-import postslocal from "./posts/postslocal.json";
+//import SliderImage from "./components/SliderImage";
+//import postslocal from "./posts/postslocal.json";
 import moment from "moment";
 import AllBlogPostsPage from "./components/AllPostsPage";
 import Footer from "./components/footer";
 import AboutPage from "./components/AboutPage";
-import { useLocation } from "react-router-dom";
-import mainbg from "./assets/mainbg.gif";
+//import { useLocation } from "react-router-dom";
+//import mainbg from "./assets/mainbg.gif";
 import styles from "./App.module.css";
 import { MyContext, MyProvider } from "./myContext";
 import NotFoundPage from './components/NotFoundPage';
-//state management thingo
+//state management 
 
 class StyledDiv extends React.Component {
   render() {

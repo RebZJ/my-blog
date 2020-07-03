@@ -1,13 +1,15 @@
 import React from "react";
-import Strapi from "strapi-sdk-javascript/build/main";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Col, Row, Card } from "react-bootstrap";
-import { NavLink, Route, Link } from "react-router-dom";
-import ReactHtmlParser from 'react-html-parser';
-import { datemod } from "./datemod";
-import moment from "moment";
+import { Container, Col, Row } from "react-bootstrap";
+// import Strapi from "strapi-sdk-javascript/build/main";
+// import { NavLink, Route, Link } from "react-router-dom";
+// import ReactHtmlParser from 'react-html-parser';
+// import { datemod } from "./datemod";
+// import moment from "moment";
+// import { Parallax, Background } from "react-parallax";
 import SliderImage from "./SliderImage";
-import { Parallax, Background } from "react-parallax";
+
 import RenderPosts from "./RenderPosts";
 
 
