@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Col, Row, Card } from "react-bootstrap";
-import { NavLink, Route, Link, withRouter } from "react-router-dom";
+import { Col, Row, Card } from "react-bootstrap";
+import { Link, withRouter } from "react-router-dom";
 import { getcate } from "./getcate";
 import { datemod } from "./datemod";
 import moment from "moment";

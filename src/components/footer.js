@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
-import ReactHtmlParser from "react-html-parser";
+//import ReactHtmlParser from "react-html-parser";
 import Modal from "react-responsive-modal";
-import { MyContext, MyProvider } from "../myContext";
+import { MyContext} from "../myContext";
 import sty from "./sty.module.css";
-import { Helmet } from "react-helmet";
+
 
 const styles = {
   root: {
@@ -46,7 +46,7 @@ var messages = [
 function message() {
   var num = Math.floor(Math.random() * 3);
   var formresponse;
-  if (num != 0) {
+  if (num !== 0) {
     formresponse = (
       <div>
         <p>

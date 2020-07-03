@@ -12,7 +12,7 @@ import {
   RedditShareButton,
   TumblrShareButton,
   TwitterShareButton,
-  WhatsappShareButton,
+
 } from "react-share";
 
 import {
@@ -21,7 +21,7 @@ import {
   RedditIcon,
   TumblrIcon,
   TwitterIcon,
-  WhatsappIcon,
+
 } from "react-share";
 
 const styles = {
@@ -36,9 +36,6 @@ const styles = {
 };
 
 export default class PostPage extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     var styleof =
