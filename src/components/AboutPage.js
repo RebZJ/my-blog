@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import sty from "./sty.module.css";
 
-var colorBack = "linear-gradient( to bottom, rgba(144,247,236,1) 10%, rgba(50,244,200,1) 100%)";
+var colorBack = "rgba(144,247,236,1)";
 
 const styles = {
     post: {
@@ -45,13 +46,13 @@ class AboutPage extends Component {
 
 
 
-                <Container fluid>
+                <Container fluid >
                     <Row>
                         <Col lg></Col>
-                        <Col lg={5} >
-                            <h1 style={{ textAlign: "center" }} >About</h1>
-                            <hr className="inherit"></hr>
-                            <div style={styles.post}>{content()}</div>
+                        <Col lg={5}  >
+                            <h1 style={{ textAlign: "center" } }  >About</h1>
+                            <hr className="inherit" ></hr>
+                            <div style={styles.post} className={sty.rollIn} >{content()}</div>
                         </Col>
                         <Col lg></Col>
                     </Row>

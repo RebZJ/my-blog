@@ -1,3 +1,5 @@
+//Where the post is rendered 
+
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ReactHtmlParser from "react-html-parser";

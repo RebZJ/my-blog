@@ -44,11 +44,12 @@ export class MyProvider extends React.Component {
         (error) => {
           alert(
             error +
-              ". SORRY! Can't load this right now, please come back in a minute? (This probably means there are a lot a lot of people here right now). Love -Reb"
+              ". SORRY! Can't load posts right now, please come back in a minute or hit refresh? (This probably means there are a lot a lot of people here right now). Love -Reb"
           );
         }
       );
   }
+  /*for the global modal trigger*/
   updateValue = (val, src) => {
     this.setState({
       modal: {value:val, source:src},

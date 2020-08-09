@@ -11,6 +11,7 @@ import sty from "./sty.module.css";
 
 
 
+
 var colorBack = "linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%)";
 const styles = {
   post: {

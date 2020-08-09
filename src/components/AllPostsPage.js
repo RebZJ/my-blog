@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import RenderPosts from './RenderPosts';
 import {Container, Row, Col} from 'react-bootstrap';
-
+//liSt of posts
 class AllBlogPostsPage extends Component {
     render() {
         return (
             <div>
-  
+
 
            
             <Container fluid>

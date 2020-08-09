@@ -1,4 +1,4 @@
-import ReactDOM, { render, hydrate } from 'react-dom';
+import { render } from 'react-snapshot';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -30,11 +30,9 @@ function ScrollToTop() {
 }
 
 const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(<BrowserRouter><ScrollToTop /><App /></BrowserRouter>, rootElement);
-} else {
-  render(<BrowserRouter><ScrollToTop /><App /></BrowserRouter>, rootElement);
-}
+
+render(<BrowserRouter><ScrollToTop /><App /></BrowserRouter>, rootElement);
+
 
 // ReactDOM.render(
 
