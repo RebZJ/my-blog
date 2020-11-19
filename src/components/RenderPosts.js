@@ -94,8 +94,7 @@ class RenderPosts extends React.Component {
                 fluid="true"
                 onClick={() =>
                   this.props.history.push(
-                    "/posts/" +
-                      moment(post.date).format("YYYY-MM-DD") +
+
                       "/" +
                       post.slug
                   )
