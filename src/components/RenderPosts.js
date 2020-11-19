@@ -120,8 +120,7 @@ class RenderPosts extends React.Component {
                   <Link
                     to={{
                       pathname:
-                        "/posts/" +
-                        moment(post.date).format("YYYY-MM-DD") +
+     
                         "/" +
                         post.slug,
                       post: post,
