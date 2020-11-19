@@ -1,5 +1,7 @@
+Code for my blog. Built with create-react-app. Optimised for SEO using something. I think it was HelmetJS? Check it yourself my dude.  
 
-
+Leeching off wordpress for posts (freeeee stufff yessss), will make backend when no longer working. 
+Oh yea! For those of you who want to use it. Remember this is pure spaghetti written for myself. It's not a template, but feel free to take bits of it.
 
 
 Default stuff: 
