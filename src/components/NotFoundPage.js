@@ -24,12 +24,12 @@ class NotFoundPage extends React.Component {
           <Row>
             <Col lg></Col>
             <Col lg={5}>
-              <h1 style={{ textAlign: "center" }}>Uh oh!</h1>
+              <h1 style={{ textAlign: "center" }}>Uh oh!...or loading</h1>
               <hr className="inherit"></hr>
               <div style={styles.post}>
                 <p>
                   {
-                    "Terribly sorry about this, but it appears that this link doesn't appear to exist."
+                    "Terribly sorry about this, but it appears that this link doesn't appear to exist. Or give it one sec it's loading! (you shouldn't be able to read this if that's the case though)"
                   }
                 </p>
                 <p style={{ textAlign: "center" }}>
