@@ -80,7 +80,7 @@ class App extends React.Component {
                           <AboutPage posts={context.state.posts} />
                         )}
                       />
-//                    <Route path="*" component={NotFoundPage} />
+                {/* <Route path="*" component={NotFoundPage} />*/}
                     </Switch>
                   </StyledDiv>
                   <Footer />
