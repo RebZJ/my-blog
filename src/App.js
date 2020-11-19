@@ -57,8 +57,7 @@ class App extends React.Component {
                           key={post.date}
                           exact
                           path={
-                            "/posts/" +
-                            moment(post.date).format("YYYY-MM-DD") +
+     
                             "/" +
                             post.slug
                           }
